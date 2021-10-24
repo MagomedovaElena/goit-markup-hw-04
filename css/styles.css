@@ -93,14 +93,21 @@ color: #757575;
 .section-description {
     padding-top: 94px;
 }
-
+/* hero */
 .baner {
+    
+max-width: 100%;
+height: 600px;
 padding-top: 200px;
+padding-bottom: 200px;
 text-align: center;
 background-color: #2F303A;
-padding-bottom: 200px;
+background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+url("../img/baner_bg.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
-
 .title {
 font-weight: 900;
 font-size: 44px;
@@ -140,6 +147,16 @@ cursor: pointer;
 .description li:not(:last-child) {
     margin-right: 30px;
 }
+/* about us icons */
+.description-icon {
+    width: 270px;
+    height: 120px;
+    /* temporal size */
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+
+}
 .description h3 {
     font-weight: 700;
     font-size: 14px;
@@ -159,7 +176,7 @@ cursor: pointer;
 
 }
 
-.zanytie, .komanda {
+.zanytie, .komanda, .clients {
     margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
@@ -182,6 +199,10 @@ letter-spacing: 0.03em;
     width: 270px;
    background-color:#FFFFFF;
    text-align: center;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14), 
+   0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
 
 }
 .team li:not(:last-child) {
@@ -208,6 +229,20 @@ font-size: 16px;
 line-height: 1,2;
 letter-spacing: 0.03em;
 color: #757575;
+}
+/* clients logo */
+.clients-logo {
+    display: flex;
+}
+.clients-logo li {
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-logo li:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* portfolio */
