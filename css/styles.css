@@ -241,7 +241,7 @@ letter-spacing: 0.03em;
 .team {
     display: flex;   
 }
-.team li {
+.team > li {
     width: 270px;
    background-color:#FFFFFF;
    text-align: center;
@@ -251,7 +251,7 @@ letter-spacing: 0.03em;
    border-radius: 0px 0px 4px 4px;
 
 }
-.team li:not(:last-child) {
+.team > li:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -287,11 +287,11 @@ color: #757575;
     height: 44px;
 }
 .social-link {
+    display: block;
+}
+.social-icon {
     width: 20px;
     height: 20px;
-    display: block;
-    background-color: #2196F3;    
-    outline: 2px solid red;
 }
 /* clients logo */
 .clients-logo {
@@ -311,6 +311,7 @@ color: #757575;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
+    cursor: pointer;
 
 }
 .button-icon {
