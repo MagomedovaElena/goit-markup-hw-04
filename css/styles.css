@@ -80,17 +80,36 @@ font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #757575;
+display: inline-flex;
 }
 .top-contact a:hover {
     color: #2196F3;
 }
-/* .top-contact a::before {
+.top-contact a::before {
     content: "";
+    margin-right: 10px;         
     width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-color: red;
-} */
+    height: 16px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+.mail::before {       
+    /* width: 16px;
+    height: 12px;  */
+    background-image: url("../img/envelope.svg");
+    fill: currentColor;
+}
+.phone::before {      
+    /* width: 10px;
+    height: 16px; */
+    background-image: url("../img/smartphone.svg");   
+}
+.mail:hover::before {
+    fill: currentColor;
+    /* fill: #2196F3; */
+    /* background-color: royalblue; */
+}
 /* index main */
 .section {
     padding-top: 94px;
@@ -220,8 +239,7 @@ letter-spacing: 0.03em;
     margin-right: 30px;
 }
 .team {
-    display: flex;
-    
+    display: flex;   
 }
 .team li {
     width: 270px;
@@ -258,6 +276,23 @@ line-height: 1,2;
 letter-spacing: 0.03em;
 color: #757575;
 }
+.social-team {
+
+}
+.social-list {
+   display: inline-flex; 
+}
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+.social-link {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #2196F3;    
+    outline: 2px solid red;
+}
 /* clients logo */
 .clients-logo {
     display: flex;
@@ -282,7 +317,7 @@ color: #757575;
     width: 106px;
     height: 60px;
     /* background-color: red; */
-    background-image: url(../../logo_client1.svg);
+    /* background-image: url(../../logo_client1.svg); */
     background-size: contain;
 }
 
@@ -395,5 +430,20 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+.footer-add-links {
+    
+display: flex;
+align-items: center;
+    margin-left: auto;  
+}
+.add-link {
+    font-family: inherit;
+    font-style: normal;
+font-weight: 700;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
 }
 
