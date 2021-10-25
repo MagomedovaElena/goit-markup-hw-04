@@ -80,11 +80,17 @@ font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #757575;
-
 }
 .top-contact a:hover {
     color: #2196F3;
 }
+/* .top-contact a::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: red;
+} */
 /* index main */
 .section {
     padding-top: 94px;
@@ -148,14 +154,36 @@ cursor: pointer;
     margin-right: 30px;
 }
 /* about us icons */
-.description-icon {
+/* .description-icon {
     width: 270px;
     height: 120px;
-    /* temporal size */
     margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
-
+} */
+.description li::before {
+    display: block;
+    content: "";
+    /* width: 270px; */
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-antena::before {    
+    background-image: url("../img/antenna.svg");
+}
+.icon-clock::before {    
+    background-image: url("../img/clock.svg");
+}
+.icon-diagram::before {    
+    background-image: url("../img/diagram.svg");
+}
+.icon-astonaut::before {    
+    background-image: url("../img/astronaut.svg");
 }
 .description h3 {
     font-weight: 700;
@@ -235,18 +263,27 @@ color: #757575;
     display: flex;
 }
 .clients-logo li {
+}
+.clients-logo li:not(:last-child) {
+    margin-right: 30px;
+}
+.button-client {
+    display: inline-flex;
+    align-items: center;
     width: 170px;
     height: 92px;
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-.clients-logo li:not(:last-child) {
-    margin-right: 30px;
+    padding: 16px 32px;
+
 }
 .button-icon {
     width: 106px;
     height: 60px;
+    /* background-color: red; */
+    background-image: url(../../logo_client1.svg);
+    background-size: contain;
 }
 
 /* portfolio */
